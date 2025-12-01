@@ -1,12 +1,12 @@
 pipeline{
     agent any
     stages{
-        stage(checkout-pull from git hub ){
+        stage("checkout -pull from git hub" ){
             steps{
                 checkout scm
         }
         }
-        stage(build){
+        stage("build"){
             steps{
                 echo"compiling java program"
                 bat '''
@@ -15,7 +15,7 @@ pipeline{
                 '''
             }
         }
-        stage(run the program){
+        stage("run the program"){
             steps{
                     echo"running java program"
                     bat'''
