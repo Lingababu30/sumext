@@ -9,7 +9,8 @@ class Sum{
     public static void main(String args[]){
         simpjava s=new simpjava();
         System.out.println("The sum of two numbers:");
-        System.out.println("sum after updating sum");
+        System.out.println("sum  updating sum");
+        
         s.sum();
     }
 }
